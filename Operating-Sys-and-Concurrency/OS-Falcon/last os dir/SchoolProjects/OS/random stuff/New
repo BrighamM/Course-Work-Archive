@@ -1,0 +1,224 @@
+For 1 runs and size 100
+The Average STD::SEARCH time was: 2.292e-06
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average STD::SORT time was: 1.3282e-05
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average STD::SEARCH time was: 3.333e-06
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average STD::SORT time was: 8.3125e-05
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average STD::SEARCH time was: 3.1354e-05
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average STD::SORT time was: 0.00105349
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average STD::SEARCH time was: 0.000172916
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average STD::SORT time was: 0.0130762
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average STD::SEARCH time was: 0.0020802
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average STD::SORT time was: 0.162709
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 2 threads was: 0.000115104
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 2 threads was: 7.4479e-05
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 2 threads was: 0.00010302
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 2 threads was: 0.000235988
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 2 threads was: 0.00160796
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 3 threads was: 0.00011651
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 3 threads was: 9.7135e-05
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 3 threads was: 0.000247134
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 3 threads was: 0.000228802
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 3 threads was: 0.00162557
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 4 threads was: 0.000122291
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 4 threads was: 0.000116093
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 4 threads was: 0.000156145
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 4 threads was: 0.000219947
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 4 threads was: 0.00227718
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 5 threads was: 0.00014677
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 5 threads was: 0.000143698
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 5 threads was: 0.000196197
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 5 threads was: 0.000325155
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 5 threads was: 0.00166728
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 6 threads was: 0.000198593
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 6 threads was: 0.000186614
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 6 threads was: 0.000224842
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 6 threads was: 0.000308436
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 6 threads was: 0.00168843
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 7 threads was: 0.000280936
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 7 threads was: 0.000284582
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 7 threads was: 0.000319425
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 7 threads was: 0.000426248
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 7 threads was: 0.0108512
+The Standard Deviation was: 0
+
+For 1 runs and size 100
+The Average SEARCH time using 8 threads was: 0.000433071
+The Standard Deviation was: 0
+
+For 1 runs and size 1000
+The Average SEARCH time using 8 threads was: 0.000411613
+The Standard Deviation was: 0
+
+For 1 runs and size 10000
+The Average SEARCH time using 8 threads was: 0.000517185
+The Standard Deviation was: 0
+
+For 1 runs and size 100000
+The Average SEARCH time using 8 threads was: 0.000584685
+The Standard Deviation was: 0
+
+For 1 runs and size 1000000
+The Average SEARCH time using 8 threads was: 0.00229905
+The Standard Deviation was: 0
+
+Partial printing of unsorted vectors prior to Parallel Quick Sort:
+hundred: 1287484650 oneK: 1287484650 tenK: 1287484650 hundredK: 1287484650 oneM: 1287484650
+hundred: 530314869 oneK: 530314869 tenK: 530314869 hundredK: 530314869 oneM: 530314869
+hundred: 724289024 oneK: 724289024 tenK: 724289024 hundredK: 724289024 oneM: 724289024
+hundred: 775985344 oneK: 775985344 tenK: 775985344 hundredK: 775985344 oneM: 775985344
+hundred: 1216195535 oneK: 1216195535 tenK: 1216195535 hundredK: 1216195535 oneM: 1216195535
+hundred: 1718521134 oneK: 1718521134 tenK: 1718521134 hundredK: 1718521134 oneM: 1718521134
+hundred: 1203755244 oneK: 1203755244 tenK: 1203755244 hundredK: 1203755244 oneM: 1203755244
+hundred: 1506015321 oneK: 1506015321 tenK: 1506015321 hundredK: 1506015321 oneM: 1506015321
+hundred: 993569041 oneK: 993569041 tenK: 993569041 hundredK: 993569041 oneM: 993569041
+hundred: 1362879368 oneK: 1362879368 tenK: 1362879368 hundredK: 1362879368 oneM: 1362879368
+hundred: 417650089 oneK: 417650089 tenK: 417650089 hundredK: 417650089 oneM: 417650089
+hundred: 1763025477 oneK: 1763025477 tenK: 1763025477 hundredK: 1763025477 oneM: 1763025477
+hundred: 616150656 oneK: 616150656 tenK: 616150656 hundredK: 616150656 oneM: 616150656
+hundred: 148776063 oneK: 148776063 tenK: 148776063 hundredK: 148776063 oneM: 148776063
+hundred: 2067459708 oneK: 2067459708 tenK: 2067459708 hundredK: 2067459708 oneM: 2067459708
+hundred: 1834142968 oneK: 1834142968 tenK: 1834142968 hundredK: 1834142968 oneM: 1834142968
+hundred: 1551378417 oneK: 1551378417 tenK: 1551378417 hundredK: 1551378417 oneM: 1551378417
+hundred: 709093800 oneK: 709093800 tenK: 709093800 hundredK: 709093800 oneM: 709093800
+hundred: 1359523432 oneK: 1359523432 tenK: 1359523432 hundredK: 1359523432 oneM: 1359523432
+hundred: 1087083292 oneK: 1087083292 tenK: 1087083292 hundredK: 1087083292 oneM: 1087083292
+
+Partial printing of sorted vectors after Parallel Quick sort: 
+hundred: 3116051 oneK: 210557 tenK: 177175 hundredK: 7368 oneM: 4634
+hundred: 26179595 oneK: 1375944 tenK: 182520 hundredK: 23488 oneM: 7368
+hundred: 78158226 oneK: 3116051 tenK: 210557 hundredK: 33505 oneM: 9774
+hundred: 79901481 oneK: 4932872 tenK: 386497 hundredK: 37843 oneM: 10082
+hundred: 107472612 oneK: 5819503 tenK: 536713 hundredK: 44567 oneM: 10527
+hundred: 148776063 oneK: 6119483 tenK: 611008 hundredK: 47983 oneM: 15326
+hundred: 172542849 oneK: 9609089 tenK: 654070 hundredK: 54228 oneM: 15867
+hundred: 180331069 oneK: 13450653 tenK: 672034 hundredK: 61315 oneM: 23488
+hundred: 191924602 oneK: 19515900 tenK: 681299 hundredK: 74999 oneM: 23565
+hundred: 205344586 oneK: 20146307 tenK: 858475 hundredK: 94250 oneM: 26505
+hundred: 257104326 oneK: 20408662 tenK: 1018049 hundredK: 96577 oneM: 28925
+hundred: 278117319 oneK: 26179595 tenK: 1140667 hundredK: 112361 oneM: 33390
+hundred: 318081605 oneK: 26590375 tenK: 1179627 hundredK: 119659 oneM: 33505
+hundred: 327760245 oneK: 27382791 tenK: 1312406 hundredK: 126687 oneM: 37037
+hundred: 344519908 oneK: 31915397 tenK: 1343423 hundredK: 148613 oneM: 37843
+hundred: 349869961 oneK: 33014355 tenK: 1375944 hundredK: 162237 oneM: 44567
+hundred: 394698576 oneK: 37578347 tenK: 1604176 hundredK: 165079 oneM: 45372
+hundred: 397269188 oneK: 38564384 tenK: 1701939 hundredK: 168503 oneM: 47983
+hundred: 417650089 oneK: 42782346 tenK: 1877929 hundredK: 177175 oneM: 50847
+hundred: 420878171 oneK: 46432912 tenK: 2228732 hundredK: 182520 oneM: 51043
+Finished! 

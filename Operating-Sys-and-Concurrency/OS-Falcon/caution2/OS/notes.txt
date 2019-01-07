@@ -1,0 +1,310 @@
+
+
+OS Notes.
+
+11 January 2017
+
+We talked about templates of return type auto.
+
+How you need to use 
+
+	g++ -std=c++14 -O3 -g0 -Wall -Wextra -Werror -pthread -o./release main.cpp && ./release
+
+g++: use the GNU c++ compiler
+-std=c++14: use c++ 14
+-03: use Optimizations
+-g0: 
+-Wall: show all warnings
+-Wextra: show extra warnings
+-Werror: treat warnings as errors
+-pthread: use threads I think
+-o./release: call the object file "release"
+main.cpp: do all this stuff to main.cpp
+&& ./release: When finished with everything and if you have made it this far run release
+
+We talked about timing functions, refer to Serial Mandelbrot for more info
+
+We touched on how the best programmers spend time on paper getting the design right,
+before starting to code stuff
+
+Do not use control-C
+
+then we started to hit on Lambda functions
+time([operator for capture list](){myfunction(args);}); 
+**************************************************************************************
+On one of the days Dr. Sundberg
+gave a quiz
+
+auto thing = new Thing();
+thing.bar();
+delete thing;
+
+The question was what would cause thing to never be deleted?
+
+First
+Pointer cannot access member functions directly, so...
+thing->bar();
+
+Then 
+bar();
+could throw an exception
+		std::cout << imagePHeights[i] << std::endl;
+
+memory leaks happen when new is called buyt the corresponding delete is not.
+**************************************************************************************
+18 January 2017
+
+We started off talking about threads and how we can get a ball park number of the available
+threads by 
+
+auto threadCount = std::thread::hardware_concurrency();
+
+We will be using kernel threads.
+
+NOTE a picture of a graph
+with threads on the x
+and time on the y
+this reaches an asymptotic limit
+
+Amdahl's law:
+
+1/((1-P)*(P/n))
+
+or
+
+Lim(n->inf) S(n) = (1/(1-P))
+
+this is true because with all work we could ever do a portion may be Parallel but there 
+will always be a Serial portion to be taken care of.
+
+We then continued our discussion on threads
+see ThreadedMandelbrot for actual code.
+same as before we are using lambda stuff to run our threads
+
+std::thread t([](){dostuff();});
+or
+t = std::thread(...
+
+cannot assign one thread to another
+
+t = s ! NOOOOOO!
+
+must call t.join or else you get segmentation fault.
+I think that calling this tells the threads to stop after they 
+are done doing their work and recombine.
+*************************************************************************
+20 January 2017
+
+efficiency = speedup/processors
+
+We should install cmake
+and get to know gnu plot and latek
+
+We can run into lots of issues when using multiple threads.  
+One thing we can do is us a flag when compiling to help us out.
+
+-fsanitize=thread
+-fsanitize=address
+-fsanitize=ub
+
+Using these sorts of flags will slow us down
+
+Race Conditions
+1. More than one thread
+2. One of those threads is a writer
+3. The same memory location is involved
+
+One way around this mess is to use const and to pass by copy
+I NEED TO REVIEW THIS%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+One of the questions that Dr. Sundberg asked was
+
+class X
+{
+	int foo = 42;
+	.
+	.
+	.
+	alot of stuff
+	.
+	.
+	.
+	void bar()
+	{
+		foo=?
+	}
+
+}
+
+Does putting this stuff in a class make it better?
+
+We then started talking about Critical-section problems and Critical-section solutions
+
+Then he asked how would an atomic swap work with two threads and trying to swap values of 
+things that could only be 0 or 1.
+
+With regards to locks:
+
+lock
+int =1;
+
+while(x=1)
+{
+swap(x,g)
+}
+
+where g=0 to start and is then switched to g=1.
+
+
+
+unlock
+int x=0
+swap(x,g);
+
+I have the words "spinlock" underlined
+
+std::mutex
+std::Lock-guard // RAII object for holding a mutex
+********************************************************************************
+25 January 2017
+
+Today we talked about a myriad of things
+
+First we started talking about lambdas.
+
+We lambdas when we want to send function calls as parameters to other functions. 
+
+This ensures that variables and data don't just fall out of scope, all willy nilly.
+
+[](){}
+
+This is an ineffable type,... it cannot be named
+
+[] The square brackets are our capture list
+() Parameters....
+{} These contain the fucntion call or the body.....
+... on a side note after capturing there is a closure
+
+So say we had a struct/class
+
+struct NoCapture //this would not have a name for lambda
+
+auto operator() (params...) {body} 
+
+NoCapture()
+
+
+// what we are doing is everytime we are using lambda we are making an 
+// instantiation of this class.
+
+the this->pointer is awkward in the capture list.  
+
+if [&] & goes into the constructor // pass by reference THIS MAY GO OUT OF SCOPE! BE CAREFUL!
+if [=] = goes into the constructor // pass by copy make a copy of everything, then go.
+
+Compiler flags
+
+g++ -Wall -Wextra -Werror -lpthread -pthread -O3 -g0 --std=c++14 -o myEXE  main.cpp class1.cpp class2.cpp etc...
+
+
+g++: Invoke the compiler
+-Wall: provide all warnings  -W is the flag "all" is the argument to -W
+-Wextra: show me all the extra warnings
+-Werror: treat all warnings as errors
+-O3: "dash Ohh three" turn on the optimizers
+-g0: "dash lowercase g zero" no debug
+-lpthread, pthread: Use thread libraries as necessary
+--std=c++14: there is more than one char... so two dashes, use c++ 14
+-o myEXE: "dash ohh myEXE" call the executable thing meEXE // I think this defaults to a.out
+
+
+release: -O3 -g0 ---> "ohhh three gee zero"
+debug: -O0 -g3 ---> "ohhh zero gee three" the -g3 turns on all debug symbols
+
+cmake stuff
+
+First we have a file called "CmakeLists.txt"
+
+It takes on the following form:
+
+---------------begin file------------------
+CMAKE
+REQUIRED_VERSION(3.6)
+Project(name)
+
+set(Sources
+file.cpp
+file.h
+:
+:
+:
+)
+
+ADD_EXECUTABLE(name file.cpp..... ) // We can do this or look above second ^
+ 
+add_executable(name ${sources})   // use this if we used set(sources...)
+
+set (CXX_FLAGS ${CXX_FLAGS} -Werror .....)
+
+
+
+
+--------------end file--------------------------
+
+
+
+Cmake curses gui ccmake
+always build out of src
+
+use cgdb
+
+some usefule gdb things
+
+c
+r
+n
+s
+print var
+b
+set
+catch throw
+set var
+bt
+f
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

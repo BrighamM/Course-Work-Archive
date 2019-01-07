@@ -1,0 +1,84 @@
+#ifndef THREAD_POOL
+#define THREAD_POOL
+
+#include <condition_variable>
+#include <mutex>
+#include "TSQ.h"
+#include <atomic>
+#include <thread>
+#include <iostream>
+
+class ThreadPool
+{
+public:
+	using func = std::function<void(void)>;
+	ThreadPool(int n):taskCounter(0),pool(n),queue(),taskCounter_m(),done(false)
+	{
+	}
+
+	void stop()
+	{
+		done = true;
+	}
+
+	void post(func f)
+	{
+		queue.enqueue(f);	
+		std::lock_guard<std::mutex> lock(taskCounter_m);
+		taskCounter++;
+	}
+	
+	void start()
+	{
+		for(auto&t:pool)
+		{
+			t = std::thread([&](){run();});
+		}
+
+	}
+
+	void run()
+	{
+		while(!done)
+		{
+			func f;
+			if(queue.try_dequeue(f))
+			{
+				f();
+				{
+					std::lock_guard<std::mutex> lock(taskCounter_m);
+					taskCounter--;
+				}
+				if(taskCounter <= 0)
+				{
+					stop();
+				}
+
+			}
+			if(done)
+			{
+				return;
+			}	
+		}
+	}
+
+
+	~ThreadPool()
+	{
+		for(auto &t:pool)
+		{
+			t.join();
+		}
+	}
+private:
+	int taskCounter;
+	std::vector<std::thread> pool;
+	TSQ<func> queue;
+	std::mutex taskCounter_m;
+	std::atomic<bool> done;
+};
+
+
+
+
+#endif

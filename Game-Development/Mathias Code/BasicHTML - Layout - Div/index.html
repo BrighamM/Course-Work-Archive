@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>HTML - Layout</title>
+</head>
+<body>
+	<div style = "width: 50%;">
+		<div style = "background-color: #C2E0FF; text-align: center;">
+			<span>Layout Using Divs</span>
+		</div>
+		
+		<div>
+			<div style = "width: calc(25% - 2px); height: 120px; border: solid black 1px; float: left;">
+				<span>Left</span><br/>
+				<ul>
+					<li>Red</li>
+					<li>Green</li>
+					<li>Blue</li>
+				</ul>
+			</div>
+			<div style = "width: 50%; height: 120px; text-align: center; float: left;">
+				<span>Don't bother with vertical alignment!</span>
+			</div>
+			<div style = "width: calc(25% - 2px); height: 120px; border: solid black 1px; vertical-align: top; float: left;">
+				<span>Right</span>
+			</div>
+		</div>
+		
+		<div style = "clear: both; background-color: #0066FF; text-align: center;">
+			<span>Brought to you by Dean Mathias</span>
+		</div>
+	</div>
+</body>
+</html>

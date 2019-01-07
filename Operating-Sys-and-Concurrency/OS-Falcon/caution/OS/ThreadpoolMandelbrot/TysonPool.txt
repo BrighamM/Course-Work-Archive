@@ -1,0 +1,96 @@
+#ifndef THREAD_POOL
+#define THREAD_POOL
+
+#include <condition_variable>
+#include <mutex>
+#include "TSQ.h"
+#include <atomic>
+#include <thread>
+#include <iostream>
+
+class ThreadPool
+{
+public:
+	using func = std::function<void(void)>;
+	// added job mutex
+	ThreadPool(int n):pool(n),queue(),hasItem(),itemMutex(),jobMutex,shouldContinue(true)
+	{
+		// begin added code
+		numTasksgiven = 0;
+		numTasksFinished = 0;
+		// finish added code
+		for(auto&t:pool)
+		{
+			t = std::thread([=](){this->run();});
+		}
+	}
+
+	void stop()
+	{
+		while(numTasksFinished < numTasksGiven
+		{
+			std::cout << "Stop called waiting for threads to finish " << std::endl;
+			std::unique_lock<std::mutex> l(jobMutex);
+			caughtUp.wait(l);
+		}
+		shouldContinue = false;
+		hasItem.notify_all();
+	}
+
+	void post(func f)
+	{
+		queue.enqueue(f);
+		hasItem.notify_one();	
+		std::lock_guard<std::mutex> l(taskFinishedMutex)
+		numTasksGiven ++;		
+	}
+
+	void run()
+	{
+		while(shouldContinue)
+		{
+			func f;
+			while(queue.try_dequeue(f))
+			{
+				// I think the func should be dequeued
+				//f = queue.dequeue();
+				std::unique_lock<std::mutex> l(itemMutex);
+				hasItem.wait(l);
+				if(!shouldContinue)
+				{
+					return;
+				}
+				// I think the func should be called here.
+				f();	
+			}
+			//f();
+		}
+	}
+
+	~ThreadPool()
+	{
+		for(auto &t:pool)
+		{
+			t.join();
+		}
+	}
+private:
+	std::vector<std::thread> pool;
+	TSQ<func> queue;
+	std::condition_variable hasItem;
+	std::mutex itemMutex;
+	std::atomic<bool> shouldContinue;
+
+	// Added stuff from Tyson
+	int numTasksGiven;
+	int numTasksFinished;
+	std::mutex jobMutex;
+	std::condition_variable caughtUp;
+	std::mutex taskFinishedMutex;
+	std::mutex taskAddedMutex;
+};
+
+
+
+
+#endif

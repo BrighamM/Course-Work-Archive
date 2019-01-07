@@ -1,0 +1,16 @@
+24 January 2017
+
+I am just starting but here are some important notes.
+
+With regards to the performance with 2 or 3 cores, we have to
+remember thatn when we chopped the image in half we 
+literally cut the work down by two, because each thread had
+"equal amounts" of work, but we experienced very little gain 
+with 3 threads. Why??? I think it is because when the image was 
+divided into thirds the top core and bottom core had relativly
+little work to do but the middle core was swamped.  Look at a pic
+for a better understanding.  
+
+
+
+

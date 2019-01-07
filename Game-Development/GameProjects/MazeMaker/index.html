@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MazeMaker</title>
+    <!-- <script type="text/javascript" src="./MazeMaker.js"></script> -->
+</head>
+<body>
+        <form id="maze_form">
+                What size grid would you like to play on?<br>
+                <input type="radio" name="grid-size" value="3"> 3x3<br>
+                <input type="radio" name="grid-size" value="5" checked> 5x5<br>
+                <input type="radio" name="grid-size" value="10"> 10x10<br>
+                <input type="radio" name="grid-size" value="15"> 15x15<br>
+                <input type="radio" name="grid-size" value="20"> 20x20<br> 
+                <input type="radio" name="grid-size" value="50"> 50x50<br>
+                <input type="radio" name="grid-size" value="100"> 100x100<br>
+                <input type="radio" name="grid-size" value="200"> 200x200<br>
+                <input type="radio" name="grid-size" value="300"> 300x300<br>
+                <input type="radio" name="grid-size" value="400"> 400x400<br> 
+                <input type="radio" name="grid-size" value="500"> 500x500<br>  
+
+
+                What maze generation algorithm would you like to use?:<br>
+                <input type="radio" name="mga" value="1" checked> Randomized Kruskals<br>
+                <!-- <input type="radio" name="mga" value="2"> Randomized Prim's<br>
+                <input type="radio" name="mga" value="3"> Recursive Division<br>
+                <input type="radio" name="mga" value="4"> Depth-First Search<br>  -->
+                <br>
+                <button type="submit" form="maze_form" value="Submit" id="maze_button">Begin the Game!</button>
+        </form> 
+    <canvas id = "canvas-main" width = "500" height = "500" style = "width: 100%; height: 100%;"></canvas>
+    <script>
+        var LabyrinthGame = {};
+    </script>
+    <script src = "LabyrinthLogic.js"></script>
+	<script src = "driver.js"></script>
+</body>
+</html>

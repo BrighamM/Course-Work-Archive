@@ -1,0 +1,24 @@
+[cmd]:input.txt
+main.cpp
+Makefile
+output.txt
+release
+[cmd]:   February 2017      
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 _2_2 23 24 25  
+26 27 28              
+                      
+[cmd]:/home/pi/SchoolProjects/OS/BOSS2
+[cmd]:   February 2017      
+Su Mo Tu We Th Fr Sa  
+          1  2  3  4  
+ 5  6  7  8  9 10 11  
+12 13 14 15 16 17 18  
+19 20 21 _2_2 23 24 25  
+26 27 28              
+                      
+[cmd]:Time spent executing child processes:  0.0314812 seconds.
+[cmd]:trying to exit

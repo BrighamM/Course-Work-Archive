@@ -1,0 +1,21 @@
+#title
+{
+	color: blue;
+	text-align: center;
+}
+
+.section
+{
+	color: green;
+}
+
+p
+{
+	text-align: justify;
+	background-color: #FFE6E6;
+}
+
+img
+{
+	border: 1px solid black;
+}

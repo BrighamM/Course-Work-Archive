@@ -1,0 +1,492 @@
+danluu.com
+jan2015 predicts the future
+
+fortnight took a hit 100% overload
+
+
+if I reply with dean m we are good.
+if I reply with dr mathias we are bad.
+
+office hours on the canvas, 4 creds, 
+
+No req text for the class, use the internet
+html5 games is ok
+
+jonathan blow a programming language for gmaes
+
+naughtydog is really cool
+
+midterm test
+develop a game in a 5 hour block of time.
+
+we cannot copywright gameplay
+we can make copies and clones
+
+
+Taking notes with the computer today.!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+
+we can rotate rectangles with the code that was given in class.
+we are working on modules today
+
+we can write a report function for class today
+
+we can invoke functions after they are declared
+
+a module is an abstraction of stuff
+
+semicolons are going to be added to bare return statements.
+
+Jamis Buck the maze guy
+
+randomly generating content for games 
+
+jamis@jamisbuck.org
+
+@jamis twitter
+
+PROCEDURALLY GENERATED CONTENT.
+
+talk about zelda nes
+
+how would you do a random zelda
+
+legend of zelda randomizers nes and snes
+
+how do we mimic the zelda map?
+
+how do we handle preconditions
+
+this is a maze!!!
+
+connected graph
+
+perfect maze-no loops
+
+zelda is not a perfect maze it is a braided maze.
+now we are going to simplify hte maze, one block per tile
+
+simplify biome map
+
+lets use a randomized prims algorithm with multiple seeds
+
+when we start a maze we start with a grid what walls are we going to erase??
+
+
+randomly generate a maze and overlay it.
+
+now braid the walls 
+    -find all the dead ends
+        pick a percentage and pick a random wall and turn iti 
+
+braid vs culling
+b=dead ends
+
+seed scene
+build scene
+overlay maze
+braid
+cull walls
+reset scene
+
+how do we generate the individual cells in zelda "each screen"
+
+
+Now we are going to use wilsons algortihm
+    guaranteed to produce uniform mazes
+    drunkards walk!
+    loop erased random walk
+    don't use wilsons for real time 
+
+Start thinking critically about how to generate content, where, multiple factors are coming into play
+
+determine exits
+pick and carve
+
+loop erased
+
+erode
+
+islands
+    add obstacles
+
+
+Divide the problem into smaller problems
+
+solve each problem in the simplest way
+
+expand the solutions to include more edge cases
+
+rinse and repeat until you get close enough to your goal.
+
+
+
+
+***************************************************************************************
+
+start and ending points don't matter
+we are makeing perfect mazes!
+
+a few hints
+
+gradient renderings
+draw the entire maze in one path
+the maze is being rerendered every time.
+
+finding the shortest path
+    depth
+    breadth
+    
+the first thing on the path is the ending position
+when you move to a new cell pop that cell off of the path.
+when you move to a new cell push that cell onto the current path
+
+when you pop the final piece off you are done.
+
+
+
+fucntion drawImage(){
+
+    arguments is an array that comes in as parameters to a function
+    argument[0]
+
+    if(arguments.length)
+    // we have access to arguments which has access to the params to the function.
+
+
+
+}
+
+w3 canvas drawing
+
+we have some texture that we want to draw onto the canvas
+clipping is like shutter, take a clipping
+
+change the texture name to model
+
+
+lifetime of a process
+
+init|             |term
+  ready  <--> running
+     |waiting|
+
+we can use a menu stack
+    Main Menu
+        New Game
+            + options
+                video
+                    basic
+                    advanced
+                audio
+                controls
+                    keyboard
+                    mouse
+                    controller
+            + High scores
+            + credits
+            + exit
+
+
+
+
+add a requirement that we need a background
+
+Today we are going to talk about collision detection
+
+
+
+
+Collision Detection
+    3 main walls of arena
+    blocks that can be hit
+    the paddle, there are alot of options
+    
+Polygon by Polygon intersection test. THIS IS REJECTED OUTRIGHT!
+
+Bounding box
+
+if the bounding box around a stick figure is penatrated... kill
+or do the boxes overlap? between two stick figures
+
+testing two rectangles against eachother is pretty good
+
+a simplification is
+
+an axis aligned bounding box
+    --aabb-- 
+
+2d plane..
+
+all the bounding boxes need to be aligned with the axes
+the downside to this is as the character moves the bounding box will grow and shrink
+
+another option is
+
+a Sphere r1 + r2 less than d than we have a collision
+an advantage is when the character rotates, the shere doesn't change
+
+
+Its tough to draw a sphere on a really tall person you could collide really early 2d
+
+rather than one sphere use multiple spheres
+
+head, body, legs
+
+complexity goes up
+
+fidelity goes up
+
+now wrap the snowmen in spheres
+
+first test the outer spheres, than test the inner spheres
+
+this can be nested .... alot!
+
+we may have hundreds or thousands of things colliding in our game.
+
+We want a spatial subdivision of the environment!
+this is a very simple and effective way
+
+
+use a grid and touch stuff only in the cells you are touching
+this doesn't work well where we have crowding
+
+
+This does alot of work for us!
+
+
+QUADTREES
+we have an environment with elements in it,
+every node can have 4 children.
+
+define a root node, in a square or rectangular environment
+the root node is the whol environment.
+
+If there are more than 3 elements, subdivide and get a newnode with 4 children nodes 
+    a subdivision of node 0
+Now we have a quad tree with no more than 3 objects in each node/cell
+
+
+
+use 2d octrees
+
+
+**************************************************************************************************
+
+We are talking about quad trees again trees with in the end we are detecting collisions with quad trees.
+
+One more thing on collision detection
+object moving through a wall
+do more than one physic updates vs frame updates
+sweep the object through space thereby creating a square which has been formed, then do collision detection
+on the square and circle.
+
+BREAKOUT
+detecting collisions
+test paddle every single time
+test the ball against the walls
+if the ball is inside the box...
+if the ball is inside the rows...
+check the bricks
+
+exhaustive could work for this.
+How was the state managed
+gameplay has an update and a render
+3 different update functions
+to handle countdown, something, something else
+
+particle time!
+
+particles in general
+    fire and smoke particles
+    has a lifetime... how long will it live?
+    transitions to fire, smoke, water, etc...
+    velocity
+        speed
+        direction
+    curve~path
+    how are these particles moving in some path
+    Acceleration
+    Size of the particle, not all the same size
+    some sort spin/rotation
+    visual properties, color and texture (fire and smoke)
+    
+a particle system is a sytem with a whole bunch of particles in it.
+Particle System
+    update all the particles and effects in game updateParticles();
+    create effect(fire,pos,?)
+    render
+    
+    or
+    particle system render
+        render(myPS)
+
+PUT THE RENDER ON THE PARTICLE SYSTEM
+IMPOSTERS
+    boat racing water particles being kicked up translate imposters to particles.
+
+
+
+
+???????????????????????????????????????????????????????????????????????????????????????????/
+
+Now we are talking onthe monday before 
+
+4th dimension game miagagurke 
+
+something
+
+maintain an array of particles
+
+Final Project Discussion!
+
+
+NodeJS from the beginning.
+
+multi player networking for games.
+
+clients and servers.
+
+In multi player games we need trust
+
+game model cannot run at the clients.
+
+clients can only send inputs
+
+server validates the inputs, turning rate, possible, etc..
+
+Server validates all input from the clients. and  the server serves an updated state of the game.
+
+Network lag is also a problem.
+
+Speed of light is a limitation in multi-player games.
+
+
+
+
+camera video notes!!!
+
+brain parts and how they view and control vision, reasoning and thinking.
+
+How do we properly scroll in a video game?
+
+    Attention
+        Use the camera to provide sufficient game info and feedback
+    Interaction
+        make background changes predictable and tightly bound to controls
+    Comfort
+        Ease and contextualize background changes
+
+
+    Position locking, camera moves with the character rally-x and kung fu master
+
+    terraria uses string position locking cross-hairs
+    8 minutes timer
+
+    camera window jump-bug
+        as you touch the edge of a window it will move the camera
+
+    rastan saga
+        offset window also used in Fez
+        9:50
+
+landing and snapping smw
+
+speed up push zone super mario bros
+
+lurping DKC
+
+ease in out
+
+
+dual forward focus
+
+CUE FOCUS
+AS YOU GET CLOSE TO ATTRACTORS, SLOWLY SHIFT THE CAMERA TOWARDS THE ATTRACTORS
+
+YOU ALWAYS KNOW WHERE YOU IN RELation to the center
+
+44:33 build your camera solution!
+
+
+
+****************************MORE NOTES******************************************
+
+
+Web hosting and web servers!
+We could use a whole semester for this idea
+
+browser window box where things are rendered.
+
+THen to the side we have a webserver with various files
+index.html, code, image...
+
+From the server we need to get the files over to the browser.
+
+So the user makes some sort of http(s) request
+Somewhere out in the cloud a dns look up is made and we get the address back
+
+THen the browser starts making requests to that number.
+
+From the browser to the Webserver we are communicating through TCP
+udp - no gaurantee
+tcp - gauranteed
+
+then the server and the browser start talking to each other.
+
+
+Dr. Mathias said to make a twin shooter and something about robot fights
+
+and to work on the battle royale!
+
+server game model
+rendering
+
+
+
+handling input
+
+
+
+form the two vectors dot product stuff in the demo.
+
+
+More Game Cameras!
+
+focus attention on something other than themselves
+
+learn and formalize cinematography to teach it to the software. --gamatography
+    fixed angle third person
+    dynamic third person
+    first person
+
+THe distance between the camera and the avatar
+ALWAYS HONOR THE PLAYERS INTENT
+
+
+                
+
+
+******************************
+some extra stuff I think I will need for the final!
+
+Make a timer thing that takes up a certain fractional of the overall canvas. like the top 8th by 8th
+Inside this box place your score and time
+
+given a square and a point is the point inside the square
+
+given a two squares, are they intersecting.
+
+given two spheres, are they intersecting
+
+given a point and a circle, is the point inside the square
+        
+
+
+
+
+
+
+

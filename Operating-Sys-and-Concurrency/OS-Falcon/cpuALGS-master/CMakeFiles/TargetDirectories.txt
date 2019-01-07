@@ -1,0 +1,3 @@
+/home/brigham/Desktop/cpuALGS-master/CMakeFiles/edit_cache.dir
+/home/brigham/Desktop/cpuALGS-master/CMakeFiles/rebuild_cache.dir
+/home/brigham/Desktop/cpuALGS-master/CMakeFiles/scheduler.dir

@@ -1,0 +1,148 @@
+\documentclass[11pt]{article}
+
+%\usepackage{latexsym}
+%\newcommand{\epsfig}{\psfig}
+%\usepackage{tabularx,booktabs,multirow,delarray,array}
+%\usepackage{graphicx,amssymb,amsmath,amssymb,mathrsfs}
+%\usepackage{hyperref}
+%\usepackage[linesnumbered, vlined, ruled]{algorithm2e}
+
+\usepackage{fullpage}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry}
+
+\begin{document}
+\baselineskip=14.0pt
+
+\title{CS5050 \textsc{Advanced Algorithms}
+\\{\Large Spring Semester, 2018}
+\\ Assignment 1: Algorithm Analysis
+\\ {\large {\bf Due Date:} {\bf 3:00 p.m.}, Thursday, Jan. 25, 2018 ({\bf at the beginning of CS5050 class})}}
+\date{}
+%\date{\today}
+
+
+\maketitle
+
+\vspace{-0.5in}
+
+{\bf Note:} If not specified, the base of $\log$ is $2$. This applies to all assignments of this course.
+
+\begin{enumerate}
+
+\item
+{ \bf (10 points)}
+This exercise is to convince you that exponential time algorithms are not quite useful.
+
+Suppose we have an algorithm $A$ whose running time is $O(2^{n})$. For simplicity, we assume that the algorithm $A$ needs $2^n$ instructions to finish for any input size of $n$ (e.g., if $n=5$, $A$ will finish after $2^5=32$ instructions).
+
+According to Wikipedia, as of November 2017, the fastest supercomputer in the world is ``Sunway TaihuLight'' (which is located in Wuxi, China) can perform roughly $1.25 \times 10^{17}$ instructions per second.
+Suppose we run the algorithm $A$ on Sunway TaihuLight. Answer the following questions.
+
+
+\begin{enumerate}
+
+\item
+For the input size $n=100$ (which is a relatively small input), how much time does Sunway TaihuLight need to finish the algorithm? Give the time in terms of {\bf centuries}.
+
+\item
+For the input size $n=1000$, how much time does Sunway TaihuLight need to finish the algorithm? Give the time in terms of {\bf centuries}.
+\end{enumerate}
+
+{\bf Note:} You may assume that a year has exactly 365 days.
+
+\item
+{\bf (20 points)}
+Order the following list of functions in increasing order asymptotically (i.e., from small to large, as we did in class).
+
+
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ccccccc}
+	$\log n$ & $n!$ & $2^{500}$ &  $2^n$ & $\log(\log n)^2$
+					& $2^{\log n}$\\
+$\log^3n$  & $n\log n$   &  $\log_4n$   & $n^3$   &
+$\sqrt{n}$  & $n^2\log^5 n$  \\
+\end{tabular}
+\end{center}
+\vspace{-0.2in}
+\end{table}
+
+
+
+\item
+{\bf (30 points)}
+For each of the following pairs of functions, indicate
+whether it is one of the three cases: $f(n)=O(g(n))$, $f(n)=\Omega(g(n))$, or $f(n)=\Theta(g(n))$. For each pair, you only need to give your answer and the proof is not required.
+
+
+\begin{enumerate}
+\item $f(n)=7\log n$ and $g(n)=\log n^3 + 56$.
+\item $f(n)=n^2+n\log^3 n$ and $g(n)=6n^3+\log^2n$.
+\item $f(n)=5^n$ and $g(n)=n^22^n$.
+\item $f(n)=n\log^2n$ and $g(n)=\frac{n^2}{\log^3 n}$.
+\item $f(n)=\sqrt{n}\log n$ and $g(n)=\log^8n+25$.
+\item $f(n)= n\log n+6n$ and $g(n) = n\log_3 n-8n$
+\end{enumerate}
+
+
+
+\item
+{\bf (20 points)}
+This is a ``warm-up'' exercise on algorithm {\bf design} and {\bf analysis}.
+
+The {\em knapsack problem} is defined as follows: Given as input a
+knapsack of size $K$ and $n$ items whose sizes are
+$k_1,k_2,\ldots,k_n$, where $K$ and $k_1,k_2,\ldots,k_n$ are all {\bf positive real}
+numbers, the problem is to find a full ``packing" of the knapsack (i.e., choose a subset
+of the $n$ items such that the total sum of the sizes of the items in
+the chosen subset is {\em exactly} equal to $K$).
+
+It is well known that the knapsack problem is NP-complete, which
+implies that it is very likely that efficient algorithms (i.e., those
+with a polynomial running time) for this problem do not exist. Thus,
+people tend to look for good {\bf approximation algorithms} for
+solving this problem. In this exercise, we relax the constraint of the
+knapsack problem as follows.
+
+We still seek a packing of the knapsack,
+but we need not look for a ``full" packing of the knapsack; instead,
+we look for a packing of the knapsack (i.e., a subset of the $n$ input
+items) such that the total sum of the sizes of the items in the chosen
+subset is {\em at least} $K/2$ (but no more than $K$).
+This is called a {\em factor of $2$
+approximation solution} for the knapsack problem. To simplify the
+problem, we assume that a factor of $2$ approximation solution for the
+knapsack problem always exists, i.e, there always exists a subset of items whose total size is at least $K/2$ and at most $K$.
+
+For example, if the sizes of the $n$ items are $\{9, 24, 14, 5, 8, 17\}$ and $K=20$, then $\{9, 5\}$ is a factor of $2$ approximation solution. Note that such a solution may not be unique. For example, $\{9, 8\}$ is also a solution. 
+%You only need to output one such solution. 
+
+Design a {\bf polynomial time} algorithm for computing a factor of $2$ approximation solution, and analyze the running time of your algorithm (in the big-$O$ notation). Note that although there may be multiple solutions, your algorithm only needs to find one solution. 
+
+If your
+algorithm runs in $O(n)$ time and is correct, then you will get {\bf 5 bonus points}.
+
+\vspace{0.2in}
+
+{\bf Note:} I would like to emphasize the following, which applies to the algorithm design questions in all assignments of this course.
+
+\begin{description}
+\item[1. Algorithm Description]
+You are required to clearly describe the main idea of your algorithm.
+
+\item[2. Pseudocode]
+The pseudocode is optional. However, I usually find pseudocode very helpful to explain the algorithm. So you are strongly encouraged to provide pseudocode for your algorithm as well. (The reason I want to see the algorithm description instead of only the code or pseudocode is that it would be difficult to understand another person's code without any explanation.)
+
+\item[3. Correctness]
+You also need to explain why your algorithm is correct, i.e., why your algorithm can produce a factor of $2$ approximation solution.
+
+\item[4. Time Analysis]
+Please make sure that you analyze the running time of your algorithm.
+\end{description}
+\end{enumerate}
+
+
+\vspace{0.3in}
+{\bf Total Points: 80} (not including the five bonus points)
+
+\end{document} 

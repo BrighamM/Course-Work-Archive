@@ -1,0 +1,71 @@
+
+							Report by Brigham Michaelis
+							A00364835 April 13th 2017
+							
+							
+Here is the written report of my findings. Using the simulator we had the ability to simulate multiple caching algorithms
+We used a cache size of 5 and ran our program.  We found that as we took caching into effect our latency went up.  
+This is because now that we are experiencing cache misses and penalizing our time appropriately our time really does go up.
+
+Here we print our results.
+
+Please Note that -0 indicates that the Response time was not applicable.
+
+MOST RECENTLY USED CACHE ALGORITHM
+Efficiency : 0.628547
+Task	Latency	ResponseTime
+0	130.978	28.2559
+1	111.424	25.6869
+2	172.72	-0
+3	94.8371	-0
+4	169.759	33.6433
+5	160.267	21.6308
+6	192.104	21.3802
+7	144.116	16.7944
+8	133.552	4.79153
+9	132.961	29.5845
+
+LEAST RECENTLY USED CACHE ALGORITHM
+Efficiency : 0.581587
+Task	Latency	ResponseTime
+0	135.913	7.10115
+1	164.785	25.1941
+2	152.286	22.0849
+3	118.938	27.3367
+4	116.09	25.4495
+5	68.3254	-0
+6	94.3996	22.6161
+7	69.4231	5.27097
+8	92.3276	5.82074
+9	100.678	17.46
+
+FIRST IN FIRST OUT CACHE ALGORITHM
+Efficiency : 0.624195
+Task	Latency	ResponseTime
+0	118.673	-0
+1	172.634	21.2695
+2	136.462	27.2277
+3	105.564	-0
+4	178.436	20.6844
+5	153.462	5.67537
+6	170.04	25.7667
+7	199.685	14.9901
+8	206.216	16.8454
+9	164.379	5.21538
+
+SECOND CHANCE CACHE ALGORITHM
+Efficiency : 0.663831
+Task	Latency	ResponseTime
+0	140.722	31.9266
+1	142.802	13.1509
+2	192.46	-0
+3	192.01	5.3291
+4	201.449	39.5136
+5	166.852	50.4811
+6	147.259	20.4183
+7	189.678	-0
+8	150.335	18.7323
+9	148.161	11.2935
+
+
+

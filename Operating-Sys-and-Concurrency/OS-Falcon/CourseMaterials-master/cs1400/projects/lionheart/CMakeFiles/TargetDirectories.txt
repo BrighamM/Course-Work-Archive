@@ -1,0 +1,4 @@
+/home/brigham/Desktop/CourseMaterials-master/cs1400/projects/lionheart/CMakeFiles/edit_cache.dir
+/home/brigham/Desktop/CourseMaterials-master/cs1400/projects/lionheart/CMakeFiles/rebuild_cache.dir
+/home/brigham/Desktop/CourseMaterials-master/cs1400/projects/lionheart/CMakeFiles/lionheart_test.dir
+/home/brigham/Desktop/CourseMaterials-master/cs1400/projects/lionheart/CMakeFiles/lionheart.dir

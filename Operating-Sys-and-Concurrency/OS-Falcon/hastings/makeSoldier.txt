@@ -1,0 +1,2 @@
+if (player == "ultron") pNewUnit = new ultron(rank);
+if (player == "jarvis") pNewUnit = new jarvis(rank);

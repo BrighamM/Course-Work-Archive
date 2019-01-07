@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: black;
+    background-color: cyan
+}
+
+h5 {
+    text-align: center;
+    color: black;
+    background-color: cyan
+}
+
+.p_input {
+    border: 1px solid black;
+}
+
+.text_out {
+    border: 1px solid black;
+    height: 190px;
+    /* overflow: scroll; */
+    overflow: auto;
+    
+}
+/* .pink {
+    background: pink;
+    border: 1px solid black;
+} */
+

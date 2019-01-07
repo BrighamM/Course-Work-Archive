@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>JavaScript GameLoop</title>
+	<link rel = "stylesheet" type = "text/css" href = "styles/gameloop.css">
+	<script src = "scripts/gameloop.js"></script>
+</head>
+<body>
+	<div id = "div-container">
+		<div id = "div-title">
+			<h1 class = "heading">Browser GameLoop</h1>
+		</div>
+		
+		<div id = "div-console">
+		</div>
+
+		<div id = "div-options">
+			<table>
+				<tr>
+					<td class = "label">
+						Name:
+					</td>
+					<td class = "input">
+						<input id = "id-event-name" type = "text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Interval:
+					</td>
+					<td>
+						<input id = "id-event-interval" type = "text">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						# Times:
+					</td>
+					<td>
+						<input id = "id-event-count" type = "text">
+					</td>
+				</tr>
+			</table>
+			<div class = "centered-text">
+				<button onclick = "MyGame.addEvent()" class = "centered-button">Add Event</button>
+			</div>
+		</div>
+		
+		<div id = "div-footer">
+			Created for CS 5410
+		</div>
+	</div>
+</body>
+</html>

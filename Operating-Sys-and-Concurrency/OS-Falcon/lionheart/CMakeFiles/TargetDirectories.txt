@@ -1,0 +1,4 @@
+/home/brigham/Desktop/lionheart/CMakeFiles/edit_cache.dir
+/home/brigham/Desktop/lionheart/CMakeFiles/rebuild_cache.dir
+/home/brigham/Desktop/lionheart/CMakeFiles/lionheart_test.dir
+/home/brigham/Desktop/lionheart/CMakeFiles/lionheart.dir

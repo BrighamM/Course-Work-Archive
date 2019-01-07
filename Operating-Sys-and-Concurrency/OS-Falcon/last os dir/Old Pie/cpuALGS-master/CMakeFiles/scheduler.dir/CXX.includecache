@@ -1,0 +1,154 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/Desktop/Scheduler Simulation/AlwaysInCache.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+
+/home/pi/Desktop/Scheduler Simulation/ApproximateShortestJobFirstReadyQueue.cpp
+ApproximateShortestJobFirstReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ApproximateShortestJobFirstReadyQueue.hpp
+Simulation.hpp
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+stdexcept
+-
+
+/home/pi/Desktop/Scheduler Simulation/ApproximateShortestJobFirstReadyQueue.hpp
+ReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ReadyQueue.hpp
+queue
+-
+iostream
+-
+
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+iostream
+-
+string
+-
+vector
+-
+
+/home/pi/Desktop/Scheduler Simulation/Event.hpp
+functional
+-
+
+/home/pi/Desktop/Scheduler Simulation/FiFoInCache.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+
+/home/pi/Desktop/Scheduler Simulation/FifoReadyQueue.cpp
+FifoReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/FifoReadyQueue.hpp
+Simulation.hpp
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+
+/home/pi/Desktop/Scheduler Simulation/FifoReadyQueue.hpp
+ReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ReadyQueue.hpp
+queue
+-
+iostream
+-
+
+/home/pi/Desktop/Scheduler Simulation/LeastRecentlyUsedInCache.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+
+/home/pi/Desktop/Scheduler Simulation/MostRecentlyUsedInCache.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+
+/home/pi/Desktop/Scheduler Simulation/ReadyQueue.hpp
+
+/home/pi/Desktop/Scheduler Simulation/SecondChanceInCache.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+
+/home/pi/Desktop/Scheduler Simulation/ShortestJobFirstReadyQueue.cpp
+ShortestJobFirstReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ShortestJobFirstReadyQueue.hpp
+Simulation.hpp
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+stdexcept
+-
+
+/home/pi/Desktop/Scheduler Simulation/ShortestJobFirstReadyQueue.hpp
+ReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ReadyQueue.hpp
+queue
+-
+iostream
+-
+
+/home/pi/Desktop/Scheduler Simulation/Simulation.cpp
+Simulation.hpp
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+random
+-
+
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+CacheAlgorithm.hpp
+/home/pi/Desktop/Scheduler Simulation/CacheAlgorithm.hpp
+Event.hpp
+/home/pi/Desktop/Scheduler Simulation/Event.hpp
+FifoReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/FifoReadyQueue.hpp
+ReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ReadyQueue.hpp
+Task.hpp
+/home/pi/Desktop/Scheduler Simulation/Task.hpp
+memory
+-
+queue
+-
+vector
+-
+iostream
+-
+numeric
+-
+
+/home/pi/Desktop/Scheduler Simulation/Task.cpp
+Task.hpp
+/home/pi/Desktop/Scheduler Simulation/Task.hpp
+random
+-
+
+/home/pi/Desktop/Scheduler Simulation/Task.hpp
+iostream
+-
+vector
+-
+numeric
+-
+
+/home/pi/Desktop/Scheduler Simulation/scheduler_main.cpp
+AlwaysInCache.hpp
+/home/pi/Desktop/Scheduler Simulation/AlwaysInCache.hpp
+MostRecentlyUsedInCache.hpp
+/home/pi/Desktop/Scheduler Simulation/MostRecentlyUsedInCache.hpp
+LeastRecentlyUsedInCache.hpp
+/home/pi/Desktop/Scheduler Simulation/LeastRecentlyUsedInCache.hpp
+FiFoInCache.hpp
+/home/pi/Desktop/Scheduler Simulation/FiFoInCache.hpp
+SecondChanceInCache.hpp
+/home/pi/Desktop/Scheduler Simulation/SecondChanceInCache.hpp
+FifoReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/FifoReadyQueue.hpp
+ShortestJobFirstReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ShortestJobFirstReadyQueue.hpp
+ApproximateShortestJobFirstReadyQueue.hpp
+/home/pi/Desktop/Scheduler Simulation/ApproximateShortestJobFirstReadyQueue.hpp
+Simulation.hpp
+/home/pi/Desktop/Scheduler Simulation/Simulation.hpp
+iostream
+-
+limits
+-
+
