@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang = "en-US">
+<head>
+	<meta charset = "UTF-8">
+	<title>FORTDAY!</title>
+	<script src = "/node_modules/socket.io-client/dist/socket.io.slim.js"></script>
+	<link rel = "stylesheet" type = "text/css" href = "styles/game.css">
+</head>
+<body>
+
+	<div id = "game">
+		<div id = "main-menu" class="screen">
+			<ul class = "menu">
+				<!-- <li><button id = "id-join-room">Join&nbsp;Game</button></li> -->
+				<img src = 'assets/logo.png' class = "logo">
+				<li><button id = "id-join-room">Join_Lobby</button></li>
+				<!-- <li><button id = "id-game-play">Canvas(backdoor)</button></li> -->
+				<li><button id = "id-options">Options</button></li>
+				<li><button id = "id-high-scores">High_Scores</button></li>
+				<li><button id = "id-about">About</button></li>
+				<li><button id = "id-credits">Credits</button></li>
+
+			</ul>
+		</div>
+		<!-- This is just for back door purposes, it will be removed at a later time. -->
+		<div id = "game-play" class = "screen">
+			<canvas id = "canvas-main" width = "500" height = "500" style = "background-color: #308136"></canvas>
+		</div>
+
+		<div id = "join-room" class = "screen">
+			<div id = "error-container"></div>
+			<!-- <input type = "text" id = "id-chat-name" value = "" placeholder = "Enter your name!"> -->
+			<!-- <button type = "button" id = "id-chat-start-button">Let me chat!</button> -->
+			<ul class = "menu">
+					<li><button id = "id-join-room-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "startup" class = "screen">
+			<img src = 'assets/logo.png' class = "logo">
+			<ul class = "menu">
+				<li><button id = "id-login">Login User</button></li>
+			</ul>
+			<ul class = "menu">
+				<li><button id = "id-register">Register User</button></li>
+			</ul>
+		</div>
+
+		<div id = "login" class = "screen">
+			<img src = 'assets/logo.png' class = "logo">
+			<div id = "new-user-data">
+				<label for="userName">Username: </label><input type="text" id="userName" pattern=".{5,}"   required title="At least 5 characters required" data-required="true"/><br>
+				<label for="userPassword">Password: </label><input type="password" id="userPassword" pattern=".{8,15}"   required title="8-15 characters required" data-required="true"/><br>
+			</div>
+			<ul class = "menu">
+				<li><button id = "id-login-user">Login User</button></li>
+			</ul>
+			<ul class = "menu">
+				<li><button id = "id-login-user-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "register-user" class = "screen">
+			<img src = 'assets/logo.png' class = "logo">
+			<div id = "new-user-data">
+				<label for="newUserName">Username: </label><input type="text" id="newUserName" pattern=".{5,}"   required title="At least 5 characters required" data-required="true"/><br>
+				<label for="newUserPassword">Password: </label><input type="password" id="newUserPassword" pattern=".{8,15}"   required title="8-15 characters required" data-required="true"/><br>
+				<label for="newUserPasswordConfirm">Confirm: </label><input type="password" id="passwordConfirm" pattern=".{8,15}"   required title="8-15 characters required" data-required="true"/><br>
+			</div>
+			<ul class = "menu">
+				<li><button id = "id-register-user">Register User</button></li>
+			</ul>
+			<ul class = "menu">
+				<li><button id = "id-register-user-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "high-scores" class="screen">
+			<h1>High Scores</h1>
+			<div id = 'hslist' style = "overflow:scroll">
+				<table id = "highScoresTable" style = "width:100%">
+				</table>
+			</div>
+			<ul class = "menu">
+				<li><button id = "id-high-scores-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "about" class="screen">
+			<h1>ABOUT</h1>
+				<p>This is a work in progress by team FORTDAY.</p>
+
+				<ul class = "menu">
+						<li><button id = "id-about-back">Back</button></li>
+				</ul>
+		</div>
+
+		<div id = "options" class = "screen">
+			<h1>Options</h1>
+			<p>Use the mouse to aim and click to fire</p>
+			<div class="keybinding">
+				<table>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Up</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td><button class="binding-buttons" id="moveUp">W</button></td>
+					</tr>
+					<tr>
+						<td>Left</td>
+						<td><button class="binding-buttons" id="moveLeft">A</button></td>
+						<td><button class="binding-buttons" id="moveDown">S</button></td>
+						<td><button class="binding-buttons" id="moveRight">D</button></td>
+						<td>Right</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td>Down</td>
+					</tr>
+					<tr>
+						<td>&nbsp;</td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>Sprint</td>
+						<td><button class="binding-buttons" id="sprint">SHIFT</button></td>
+					</tr>
+				</table>
+				<table>
+					<tr>
+						<td>Single Shot</td>
+						<td><button class="binding-buttons" id="fire">SPACE</button></td>
+						<td></td>
+						<td>Rapid Fire</td>
+						<td><button class="binding-buttons" id="rapidFire">V</button></td>
+					</tr>
+				</table>
+			</div>
+			<p>¿ Press esc to leave game ?</p>
+			<h5>Click a button and press a key to customize key mapping.</h3>			
+			<ul class = "menu">
+				<li><button id = "id-options-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "credits" class = "screen">
+			<h1>CREDITS</h1>
+			<p>Developed by</p>
+			<p>Justin Bradshaw</p>
+			<p>McKade Hermansen</p>
+			<p>Landon Henrie</p>
+			<p>Brigham Michaelis</p>
+			<p>Using some code provided by Dr. Mathias</p>
+			<ul class = "menu">
+				<li><button id = "id-credits-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "game-over" class = "screen">
+			<img src = 'assets/logo.png' class = "logo">
+			<div id = 'ranklist' style = "overflow:scroll">
+				<table id = "rankTable" style = "width:100%">
+				</table>
+			</div>
+			<ul class = "menu">
+				<li><button id = "id-game-over-back">Back</button></li>
+			</ul>
+		</div>
+
+		<div id = "map-screen" class = "screen">
+			<h4><p>Pick where your want to start!!!</p>
+				<p>Other players postions are marked with red squares!</p>
+				<p>HURRY YOU HAVE VERY LITTLE TIME!</p></h4>
+
+			<img id="playerPicker" src="./assets/mediumMapImage.png" style="display: none;">
+			<canvas id = "canvasMapper" width = "500" height = "500" style = "background-color: #308136"></canvas>
+
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+	<script data-main = "scripts/client/loader" src = "scripts/client/require.js"></script>
+</body>
+</html>
