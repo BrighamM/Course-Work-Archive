@@ -1,0 +1,21 @@
+VAR
+n:INTEGER;
+f:INTEGER;
+
+BEGIN
+f := 1
+FOR n := 1
+ TO 8 DO 
+f := f*n
+WRITE(n, _ASCIIVAL_=> 9, f, _ASCIIVAL_=> 10)
+ END 
+WRITE("\nExpected:\n")
+WRITE("1\t1\n")
+WRITE("2\t2\n")
+WRITE("3\t6\n")
+WRITE("4\t24\n")
+WRITE("5\t120\n")
+WRITE("6\t720\n")
+WRITE("7\t5040\n")
+WRITE("8\t40320\n")
+END.

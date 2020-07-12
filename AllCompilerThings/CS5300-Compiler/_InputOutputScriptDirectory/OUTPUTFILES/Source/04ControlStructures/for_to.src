@@ -1,0 +1,10 @@
+VAR
+i:integer;
+
+BEGIN
+FOR i := 0
+ TO 5 DO 
+WRITE(i, " ")
+ END 
+WRITE("\n\nExpected:\n0 1 2 3 4 5\n")
+END.

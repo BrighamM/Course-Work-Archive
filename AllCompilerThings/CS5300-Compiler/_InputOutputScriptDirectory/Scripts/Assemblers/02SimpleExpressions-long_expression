@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 02SimpleExpressions/long_expression.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/02SimpleExpressions/long_expression.cpsl > ../../OUTPUTFILES/Assembly/02SimpleExpressions/long_expression.asm 2> ../../OUTPUTFILES/Error/02SimpleExpressions/long_expression.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/02SimpleExpressions/long_expression.cpsl"
+
+echo "BEGIN ERRORS FOR 02SimpleExpressions/long_expression.cpsl "
+cat ../../OUTPUTFILES/Error/02SimpleExpressions/long_expression.error
+echo "END ERRORS FOR 02SimpleExpressions/long_expression.cpsl "

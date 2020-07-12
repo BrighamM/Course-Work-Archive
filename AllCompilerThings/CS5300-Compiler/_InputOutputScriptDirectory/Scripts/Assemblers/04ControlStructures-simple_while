@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 04ControlStructures/simple_while.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/04ControlStructures/simple_while.cpsl > ../../OUTPUTFILES/Assembly/04ControlStructures/simple_while.asm 2> ../../OUTPUTFILES/Error/04ControlStructures/simple_while.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/04ControlStructures/simple_while.cpsl"
+
+echo "BEGIN ERRORS FOR 04ControlStructures/simple_while.cpsl "
+cat ../../OUTPUTFILES/Error/04ControlStructures/simple_while.error
+echo "END ERRORS FOR 04ControlStructures/simple_while.cpsl "

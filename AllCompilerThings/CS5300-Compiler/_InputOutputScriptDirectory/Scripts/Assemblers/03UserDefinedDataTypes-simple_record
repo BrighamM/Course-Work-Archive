@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 03UserDefinedDataTypes/simple_record.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/03UserDefinedDataTypes/simple_record.cpsl > ../../OUTPUTFILES/Assembly/03UserDefinedDataTypes/simple_record.asm 2> ../../OUTPUTFILES/Error/03UserDefinedDataTypes/simple_record.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/03UserDefinedDataTypes/simple_record.cpsl"
+
+echo "BEGIN ERRORS FOR 03UserDefinedDataTypes/simple_record.cpsl "
+cat ../../OUTPUTFILES/Error/03UserDefinedDataTypes/simple_record.error
+echo "END ERRORS FOR 03UserDefinedDataTypes/simple_record.cpsl "

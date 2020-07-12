@@ -1,0 +1,15 @@
+VAR
+i:integer;
+
+BEGIN
+FOR i := 10
+ DOWNTO 5 DO 
+WRITE(i, " \n")
+ END 
+FOR j := 4
+ DOWNTO 0 DO 
+WRITE(_ASCIIVAL_=> 32, j)
+ END 
+WRITE("\nExpected:\n")
+WRITE("10\n9\n8\n7\n6\n5\n 4 3 2 1 0\n")
+END.

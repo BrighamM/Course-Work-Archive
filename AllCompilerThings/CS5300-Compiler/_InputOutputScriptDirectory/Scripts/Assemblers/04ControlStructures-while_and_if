@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 04ControlStructures/while_and_if.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/04ControlStructures/while_and_if.cpsl > ../../OUTPUTFILES/Assembly/04ControlStructures/while_and_if.asm 2> ../../OUTPUTFILES/Error/04ControlStructures/while_and_if.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/04ControlStructures/while_and_if.cpsl"
+
+echo "BEGIN ERRORS FOR 04ControlStructures/while_and_if.cpsl "
+cat ../../OUTPUTFILES/Error/04ControlStructures/while_and_if.error
+echo "END ERRORS FOR 04ControlStructures/while_and_if.cpsl "

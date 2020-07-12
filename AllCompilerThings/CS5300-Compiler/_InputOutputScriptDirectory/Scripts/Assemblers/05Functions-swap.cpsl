@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 05Functions/swap.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/05Functions/swap.cpsl > ../../OUTPUTFILES/Assembly/05Functions/swap.asm 2> ../../OUTPUTFILES/Error/05Functions/swap.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/05Functions/swap.cpsl"
+
+echo "BEGIN ERRORS FOR 05Functions/swap.cpsl "
+cat ../../OUTPUTFILES/Error/05Functions/swap.error
+echo "END ERRORS FOR 05Functions/swap.cpsl "

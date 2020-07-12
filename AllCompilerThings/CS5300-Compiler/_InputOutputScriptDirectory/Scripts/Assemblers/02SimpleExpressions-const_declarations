@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 02SimpleExpressions/const_declarations.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/02SimpleExpressions/const_declarations.cpsl > ../../OUTPUTFILES/Assembly/02SimpleExpressions/const_declarations.asm 2> ../../OUTPUTFILES/Error/02SimpleExpressions/const_declarations.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/02SimpleExpressions/const_declarations.cpsl"
+
+echo "BEGIN ERRORS FOR 02SimpleExpressions/const_declarations.cpsl "
+cat ../../OUTPUTFILES/Error/02SimpleExpressions/const_declarations.error
+echo "END ERRORS FOR 02SimpleExpressions/const_declarations.cpsl "

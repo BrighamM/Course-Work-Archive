@@ -1,0 +1,19 @@
+CONST
+BASE = 5;
+SIZE = 10;
+
+TYPE
+i = integer;
+r = RECORD
+a:i;
+b:i;
+c:i;
+END;
+a = ARRAY[BASE:BASE+SIZE] OF r;
+
+VAR
+A:a;
+
+BEGIN
+STOP
+END.

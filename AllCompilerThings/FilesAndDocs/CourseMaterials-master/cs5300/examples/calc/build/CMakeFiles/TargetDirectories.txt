@@ -1,0 +1,3 @@
+/home/brigham/CompilersClass/FilesAndDocs/CourseMaterials-master/cs5300/examples/calc/build/CMakeFiles/rebuild_cache.dir
+/home/brigham/CompilersClass/FilesAndDocs/CourseMaterials-master/cs5300/examples/calc/build/CMakeFiles/calc.dir
+/home/brigham/CompilersClass/FilesAndDocs/CourseMaterials-master/cs5300/examples/calc/build/CMakeFiles/edit_cache.dir

@@ -1,0 +1,12 @@
+VAR
+i:integer;
+c:char;
+
+BEGIN
+WRITE("Enter an integer, then a character:\n")
+READ(i, c)
+WRITE("integer:   ", i, _ASCIIVAL_=> 10)
+WRITE("character: ", c, _ASCIIVAL_=> 10)
+WRITE("true: ", true, _ASCIIVAL_=> 10)
+WRITE("false: ", false, _ASCIIVAL_=> 10)
+END.

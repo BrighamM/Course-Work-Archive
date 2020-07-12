@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 05Functions/hanoi.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/05Functions/hanoi.cpsl > ../../OUTPUTFILES/Assembly/05Functions/hanoi.asm 2> ../../OUTPUTFILES/Error/05Functions/hanoi.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/05Functions/hanoi.cpsl"
+
+echo "BEGIN ERRORS FOR 05Functions/hanoi.cpsl "
+cat ../../OUTPUTFILES/Error/05Functions/hanoi.error
+echo "END ERRORS FOR 05Functions/hanoi.cpsl "

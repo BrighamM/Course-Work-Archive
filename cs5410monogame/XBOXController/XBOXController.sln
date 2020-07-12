@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XBOXController", "XBOXController\XBOXController.csproj", "{AFD729CB-6D07-4D3E-B484-254D1E97AF1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFD729CB-6D07-4D3E-B484-254D1E97AF1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFD729CB-6D07-4D3E-B484-254D1E97AF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFD729CB-6D07-4D3E-B484-254D1E97AF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFD729CB-6D07-4D3E-B484-254D1E97AF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A70A2BF-8AF0-4F38-B200-78BF28DA591D}
+	EndGlobalSection
+EndGlobal

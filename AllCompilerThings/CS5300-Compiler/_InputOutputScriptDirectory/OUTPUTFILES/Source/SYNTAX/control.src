@@ -1,0 +1,28 @@
+BEGIN
+ IF true THEN 
+STOP
+ END 
+ IF false THEN 
+STOP
+ ELSE_IF false THEN 
+STOP
+ ELSE_IF false THEN 
+STOP
+ ELSE 
+STOP
+ END 
+ WHILE true DO
+STOP
+ END 
+ REPEAT 
+STOP
+ UNTIL true
+FOR x := 2
+ TO 3 DO 
+STOP
+ END 
+FOR x := 3
+ DOWNTO 2 DO 
+STOP
+ END 
+END.

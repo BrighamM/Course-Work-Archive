@@ -1,0 +1,17 @@
+VAR
+x:integer;
+
+FUNCTION postinc(REF x:integer;):integer;
+VAR
+temp:integer;
+
+BEGIN
+temp := x
+x := SUCC(x)
+RETURN temp
+END;
+
+BEGIN
+x := 1
+WRITE(x, postinc(x), x)
+END.

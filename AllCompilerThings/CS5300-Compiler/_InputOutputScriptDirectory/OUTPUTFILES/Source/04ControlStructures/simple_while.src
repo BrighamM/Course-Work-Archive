@@ -1,0 +1,11 @@
+VAR
+a:integer;
+
+BEGIN
+a := 0
+ WHILE a<10 DO
+WRITE(a)
+a := a+1
+ END 
+WRITE("\nExpected\n0123456789\n")
+END.

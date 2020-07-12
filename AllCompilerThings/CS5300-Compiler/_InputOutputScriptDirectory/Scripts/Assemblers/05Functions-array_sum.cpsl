@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 05Functions/array_sum.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/05Functions/array_sum.cpsl > ../../OUTPUTFILES/Assembly/05Functions/array_sum.asm 2> ../../OUTPUTFILES/Error/05Functions/array_sum.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/05Functions/array_sum.cpsl"
+
+echo "BEGIN ERRORS FOR 05Functions/array_sum.cpsl "
+cat ../../OUTPUTFILES/Error/05Functions/array_sum.error
+echo "END ERRORS FOR 05Functions/array_sum.cpsl "

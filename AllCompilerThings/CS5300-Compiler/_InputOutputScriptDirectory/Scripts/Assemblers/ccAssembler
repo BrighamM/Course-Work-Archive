@@ -1,0 +1,22 @@
+./02SimpleExpressions-assignment /
+./02SimpleExpressions-assignment2 /
+./02SimpleExpressions-badidea /
+./02SimpleExpressions-const_declarations /
+./02SimpleExpressions-expressions /
+./02SimpleExpressions-hello /
+./02SimpleExpressions-io /
+./02SimpleExpressions-long_expression /
+./02SimpleExpressions-stop /
+./03UserDefinedDataTypes-multi_array /
+./03UserDefinedDataTypes-record_array /
+./03UserDefinedDataTypes-simple_array /
+./03UserDefinedDataTypes-simple_record /
+./03UserDefinedDataTypes-simple_record2 /
+./04ControlStructures-factorial /
+./04ControlStructures-for_down /
+./04ControlStructures-for_to /
+./04ControlStructures-ifelseif_nested /
+./04ControlStructures-repeat /
+./04ControlStructures-simple_while /
+./04ControlStructures-while_and_if /
+./04ControlStructures-while_nested 

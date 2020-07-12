@@ -1,0 +1,12 @@
+CONST
+int = 5;
+char = _ASCIIVAL_=> 97;
+bool = true;
+str = "Hello world";
+
+BEGIN
+WRITE("5=", int, _ASCIIVAL_=> 10)
+WRITE("a=", char, _ASCIIVAL_=> 10)
+WRITE("true=", bool, _ASCIIVAL_=> 10)
+WRITE("str=", str, _ASCIIVAL_=> 10)
+END.

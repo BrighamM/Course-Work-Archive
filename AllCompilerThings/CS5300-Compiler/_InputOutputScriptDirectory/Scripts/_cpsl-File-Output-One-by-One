@@ -1,0 +1,171 @@
+clear
+echo " 02SimpleExpressions/assignment.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/assignment.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/badidea.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/badidea.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/const_declarations.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/const_declarations.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/expressions.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/expressions.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/hello.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/hello.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/io.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/io.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/long_expression.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/long_expression.cpsl
+read -p ""
+clear
+echo "02SimpleExpressions/stop.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/02SimpleExpressions/stop.cpsl
+read -p ""
+clear
+echo "03UserDefinedDataTypes/multi_array.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/03UserDefinedDataTypes/multi_array.cpsl
+read -p ""
+clear
+echo "03UserDefinedDataTypes/record_array.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/03UserDefinedDataTypes/record_array.cpsl
+read -p ""
+clear
+echo "03UserDefinedDataTypes/simple_array.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/03UserDefinedDataTypes/simple_array.cpsl
+read -p ""
+clear
+echo "03UserDefinedDataTypes/simple_record.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/03UserDefinedDataTypes/simple_record.cpsl
+read -p ""
+clear
+echo "04ControlStructures/factorial.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/factorial.cpsl
+read -p ""
+clear
+echo "04ControlStructures/for_down.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/for_down.cpsl
+read -p ""
+clear
+echo "04ControlStructures/for_to.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/for_to.cpsl
+read -p ""
+clear
+echo "04ControlStructures/ifelseif_nested.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/ifelseif_nested.cpsl
+read -p ""
+clear
+echo "04ControlStructures/repeat.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/repeat.cpsl
+read -p ""
+clear
+echo "04ControlStructures/simple_while.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/simple_while.cpsl
+read -p ""
+clear
+echo "04ControlStructures/while_and_if.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/while_and_if.cpsl
+read -p ""
+clear
+echo "04ControlStructures/while_nested.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/04ControlStructures/while_nested.cpsl
+read -p ""
+clear
+echo "05Functions/array_sum.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/array_sum.cpsl
+read -p ""
+clear
+echo "05Functions/function_with_args.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/function_with_args.cpsl
+read -p ""
+clear
+echo "05Functions/hanoi.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/hanoi.cpsl
+read -p ""
+clear
+echo "05Functions/procedure_no_args.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/procedure_no_args.cpsl
+read -p ""
+clear
+echo "05Functions/sort.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/sort.cpsl
+read -p ""
+clear
+echo "05Functions/swap.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/05Functions/swap.cpsl
+read -p ""
+clear
+echo "SYNTAX/const_declarations.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/const_declarations.cpsl
+read -p ""
+clear
+echo "SYNTAX/control.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/control.cpsl
+read -p ""
+clear
+echo "SYNTAX/expressions.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/expressions.cpsl
+read -p ""
+clear
+echo "SYNTAX/function_decl.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/function_decl.cpsl
+read -p ""
+clear
+echo "SYNTAX/hello.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/hello.cpsl
+read -p ""
+clear
+echo "SYNTAX/proc_decl.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/proc_decl.cpsl
+read -p ""
+clear
+echo "SYNTAX/statements.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/statements.cpsl
+read -p ""
+clear
+echo "SYNTAX/type_decl.cpsl "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../INPUT-CPSL-FILES/SYNTAX/type_decl.cpsl
+read -p ""
+clear

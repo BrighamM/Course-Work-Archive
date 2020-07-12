@@ -1,0 +1,3 @@
+echo "BEGIN ERROR OUTPUT OF ALL FILES"
+find ../OUTPUTFILES/Error/ -type f -exec cat {} +
+echo "END ERROR OUPUT OF ALL FILES"

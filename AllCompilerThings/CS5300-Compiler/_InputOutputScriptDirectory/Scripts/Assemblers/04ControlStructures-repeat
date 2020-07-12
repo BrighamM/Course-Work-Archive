@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 04ControlStructures/repeat.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/04ControlStructures/repeat.cpsl > ../../OUTPUTFILES/Assembly/04ControlStructures/repeat.asm 2> ../../OUTPUTFILES/Error/04ControlStructures/repeat.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/04ControlStructures/repeat.cpsl"
+
+echo "BEGIN ERRORS FOR 04ControlStructures/repeat.cpsl "
+cat ../../OUTPUTFILES/Error/04ControlStructures/repeat.error
+echo "END ERRORS FOR 04ControlStructures/repeat.cpsl "

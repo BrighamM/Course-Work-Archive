@@ -1,0 +1,24 @@
+TYPE
+crazy = ARRAY[1:10] OF RECORD
+x:integer;
+a:RECORD
+y:integer;
+z:boolean;
+g:ARRAY[4*2:32/2] OF ARRAY[_ASCIIVAL_=> 65:_ASCIIVAL_=> 90] OF RECORD
+a:char;
+b:char;
+c:char;
+d:ARRAY[-10:10] OF integer;
+END;
+END;
+END;
+
+VAR
+c:crazy;
+
+BEGIN
+c [3] .a .g  [9]  [_ASCIIVAL_=> 67] .d  [3]  := 314
+c [2] .a .g  [8]  [_ASCIIVAL_=> 68]  := c [3] .a .g  [9]  [_ASCIIVAL_=> 67] 
+WRITE("Result   = ", c [2] .a .g  [8]  [_ASCIIVAL_=> 68] .d  [3] , _ASCIIVAL_=> 10)
+WRITE("Expected = ", 314, _ASCIIVAL_=> 10)
+END.

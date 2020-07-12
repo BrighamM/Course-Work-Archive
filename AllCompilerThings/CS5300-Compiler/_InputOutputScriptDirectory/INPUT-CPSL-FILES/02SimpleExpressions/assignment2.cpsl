@@ -1,0 +1,25 @@
+VAR 
+  number : integer;
+  number1 : integer;
+  number2 : integer;
+  number3 : integer;
+  number4 : integer;
+  number5 : integer;
+  number6 : integer;
+BEGIN
+  number := 42;
+  number1 := 142;
+  number2 := 242;
+  number3 := 342;
+  number4 := 442;
+  number5 := 542;
+  number6 := 642;
+  write(number,"\n");
+  write(number1,"\n");
+  write(number2,"\n");
+  write(number3,"\n");
+  write(number4,"\n");
+  write(number5,"\n");
+  write(number6,"\n");
+  write(number1,"\n",number2,"\n",number3,"\n")
+END.

@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 05Functions/sort.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/05Functions/sort.cpsl > ../../OUTPUTFILES/Assembly/05Functions/sort.asm 2> ../../OUTPUTFILES/Error/05Functions/sort.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/05Functions/sort.cpsl"
+
+echo "BEGIN ERRORS FOR 05Functions/sort.cpsl "
+cat ../../OUTPUTFILES/Error/05Functions/sort.error
+echo "END ERRORS FOR 05Functions/sort.cpsl "

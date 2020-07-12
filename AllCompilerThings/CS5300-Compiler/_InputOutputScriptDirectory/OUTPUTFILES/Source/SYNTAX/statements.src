@@ -1,0 +1,13 @@
+PROCEDURE lotsanulls();
+BEGIN
+END;
+PROCEDURE empty();
+BEGIN
+END;
+PROCEDURE nonulls();
+BEGIN
+STOP
+END;
+
+BEGIN
+END.

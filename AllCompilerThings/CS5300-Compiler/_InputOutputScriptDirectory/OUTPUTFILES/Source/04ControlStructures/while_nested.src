@@ -1,0 +1,18 @@
+VAR
+i:integer;
+j:integer;
+
+BEGIN
+i := 0
+j := 0
+ WHILE (i<=6) DO
+ WHILE (j<=i) DO
+WRITE(i, ":", j, _ASCIIVAL_=> 32)
+j := j+1
+ END 
+WRITE(_ASCIIVAL_=> 10)
+i := SUCC(i)
+j := 0
+ END 
+WRITE("Expected: list pairs of [0-6]\n")
+END.

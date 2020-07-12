@@ -1,0 +1,12 @@
+VAR
+a:ARRAY[1:3] OF integer;
+x:integer;
+
+BEGIN
+a [1]  := 40
+x := 2
+a [x]  := x
+a [3]  := a [1] +a [2] 
+WRITE("Result  : ", a [3] , _ASCIIVAL_=> 10)
+WRITE("Expected: ", 42, _ASCIIVAL_=> 10)
+END.

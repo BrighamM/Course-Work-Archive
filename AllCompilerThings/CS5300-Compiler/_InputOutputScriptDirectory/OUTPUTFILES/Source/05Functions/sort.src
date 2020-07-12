@@ -1,0 +1,67 @@
+CONST
+LIST_MAX = 100;
+
+TYPE
+list = ARRAY[0:LIST_MAX] OF integer;
+
+VAR
+seed:integer;
+l:list;
+
+FUNCTION rand():integer;
+VAR
+result:integer;
+
+BEGIN
+seed := (8121*seed+28411)
+result := seed/134456
+seed := seed%134456
+RETURN result
+END;
+PROCEDURE print(REF a:list;);
+BEGIN
+FOR i := 0
+ TO LIST_MAX-1 DO 
+WRITE(a [i] , _ASCIIVAL_=> 32)
+ END 
+WRITE(a [LIST_MAX] )
+END;
+PROCEDURE rfill(REF a:list;);
+BEGIN
+FOR i := 0
+ TO LIST_MAX DO 
+a [i]  := rand()%1000
+ END 
+END;
+PROCEDURE swap(REF a,b:integer;);
+VAR
+t:integer;
+
+BEGIN
+t := a
+a := b
+b := t
+END;
+PROCEDURE sort(REF a:list;VAR s,e:integer;);
+BEGIN
+FOR i := 0
+ TO LIST_MAX DO 
+FOR j := i+1
+ TO LIST_MAX DO 
+ IF (a [i] >a [j] ) THEN 
+swap(a [i] , a [j] )
+ END 
+ END 
+ END 
+END;
+
+BEGIN
+rfill(l)
+WRITE("Random: ")
+print(l)
+WRITE(_ASCIIVAL_=> 10)
+sort(l, 0, LIST_MAX)
+WRITE("\nSorted: ")
+print(l)
+WRITE(_ASCIIVAL_=> 10)
+END.

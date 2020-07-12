@@ -1,0 +1,21 @@
+VAR
+disks:integer;
+
+PROCEDURE moveTower(VAR disk:integer;VAR source,dest,spare:char;);
+BEGIN
+ IF (disk=1) THEN 
+WRITE("Move ", disk, " from ", source, " to ", dest, _ASCIIVAL_=> 10)
+ ELSE 
+moveTower(disk-1, source, spare, dest)
+WRITE("Move ", disk, " from ", source, " to ", dest, _ASCIIVAL_=> 10)
+moveTower(disk-1, spare, dest, source)
+ END 
+END;
+
+BEGIN
+WRITE("Enter number of disks:")
+READ(disks)
+WRITE("Moving ", disks, " disks from tower A to tower B with tower C helping\n")
+moveTower(disks, _ASCIIVAL_=> 65, _ASCIIVAL_=> 66, _ASCIIVAL_=> 67)
+WRITE("Done\n")
+END.

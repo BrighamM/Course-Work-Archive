@@ -1,0 +1,9 @@
+CONST
+int = 5;
+char = _ASCIIVAL_=> 97;
+bool = true;
+str = "Hello world";
+
+BEGIN
+WRITE(int, char, bool, str)
+END.

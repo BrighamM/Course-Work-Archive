@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 02SimpleExpressions/assignment2.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/02SimpleExpressions/assignment2.cpsl > ../../OUTPUTFILES/Assembly/02SimpleExpressions/assignment2.asm 2> ../../OUTPUTFILES/Error/02SimpleExpressions/assignment2.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/02SimpleExpressions/assignment2.cpsl"
+
+echo "BEGIN ERRORS FOR 02SimpleExpressions/assignment2.cpsl "
+cat ../../OUTPUTFILES/Error/02SimpleExpressions/assignment2.error
+echo "END ERRORS FOR 02SimpleExpressions/assignment2.cpsl "

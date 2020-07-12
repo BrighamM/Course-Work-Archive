@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 03UserDefinedDataTypes/record_array.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/03UserDefinedDataTypes/record_array.cpsl > ../../OUTPUTFILES/Assembly/03UserDefinedDataTypes/record_array.asm 2> ../../OUTPUTFILES/Error/03UserDefinedDataTypes/record_array.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/03UserDefinedDataTypes/record_array.cpsl"
+
+echo "BEGIN ERRORS FOR 03UserDefinedDataTypes/record_array.cpsl "
+cat ../../OUTPUTFILES/Error/03UserDefinedDataTypes/record_array.error
+echo "END ERRORS FOR 03UserDefinedDataTypes/record_array.cpsl "

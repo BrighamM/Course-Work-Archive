@@ -1,0 +1,21 @@
+VAR
+a:integer;
+b:integer;
+
+PROCEDURE swap(REF a,b:integer;);
+VAR
+t:integer;
+
+BEGIN
+t := a
+a := b
+b := t
+END;
+
+BEGIN
+a := 1
+b := 0
+WRITE(a, b, _ASCIIVAL_=> 10)
+swap(a, b)
+WRITE(a, b, _ASCIIVAL_=> 10)
+END.

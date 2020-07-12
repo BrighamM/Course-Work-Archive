@@ -1,0 +1,13 @@
+VAR
+a:integer;
+
+BEGIN
+a := 0
+ WHILE a<10 DO
+ IF a%2=0 THEN 
+WRITE(a)
+ END 
+a := a+1
+ END 
+WRITE("\nExpected:\n02468\n")
+END.

@@ -1,0 +1,171 @@
+clear
+echo " 02SimpleExpressions/assignment.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/assignment.src
+read -p ""
+clear
+echo "02SimpleExpressions/badidea.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/badidea.src
+read -p ""
+clear
+echo "02SimpleExpressions/const_declarations.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/const_declarations.src
+read -p ""
+clear
+echo "02SimpleExpressions/expressions.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/expressions.src
+read -p ""
+clear
+echo "02SimpleExpressions/hello.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/hello.src
+read -p ""
+clear
+echo "02SimpleExpressions/io.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/io.src
+read -p ""
+clear
+echo "02SimpleExpressions/long_expression.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/long_expression.src
+read -p ""
+clear
+echo "02SimpleExpressions/stop.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/02SimpleExpressions/stop.src
+read -p ""
+clear
+echo "03UserDefinedDataTypes/multi_array.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/03UserDefinedDataTypes/multi_array.src
+read -p ""
+clear
+echo "03UserDefinedDataTypes/record_array.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/03UserDefinedDataTypes/record_array.src
+read -p ""
+clear
+echo "03UserDefinedDataTypes/simple_array.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/03UserDefinedDataTypes/simple_array.src
+read -p ""
+clear
+echo "03UserDefinedDataTypes/simple_record.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/03UserDefinedDataTypes/simple_record.src
+read -p ""
+clear
+echo "04ControlStructures/factorial.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/factorial.src
+read -p ""
+clear
+echo "04ControlStructures/for_down.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/for_down.src
+read -p ""
+clear
+echo "04ControlStructures/for_to.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/for_to.src
+read -p ""
+clear
+echo "04ControlStructures/ifelseif_nested.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/ifelseif_nested.src
+read -p ""
+clear
+echo "04ControlStructures/repeat.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/repeat.src
+read -p ""
+clear
+echo "04ControlStructures/simple_while.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/simple_while.src
+read -p ""
+clear
+echo "04ControlStructures/while_and_if.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/while_and_if.src
+read -p ""
+clear
+echo "04ControlStructures/while_nested.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/04ControlStructures/while_nested.src
+read -p ""
+clear
+echo "05Functions/array_sum.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/array_sum.src
+read -p ""
+clear
+echo "05Functions/function_with_args.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/function_with_args.src
+read -p ""
+clear
+echo "05Functions/hanoi.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/hanoi.src
+read -p ""
+clear
+echo "05Functions/procedure_no_args.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/procedure_no_args.src
+read -p ""
+clear
+echo "05Functions/sort.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/sort.src
+read -p ""
+clear
+echo "05Functions/swap.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/05Functions/swap.src
+read -p ""
+clear
+echo "SYNTAX/const_declarations.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/const_declarations.src
+read -p ""
+clear
+echo "SYNTAX/control.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/control.src
+read -p ""
+clear
+echo "SYNTAX/expressions.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/expressions.src
+read -p ""
+clear
+echo "SYNTAX/function_decl.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/function_decl.src
+read -p ""
+clear
+echo "SYNTAX/hello.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/hello.src
+read -p ""
+clear
+echo "SYNTAX/proc_decl.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/proc_decl.src
+read -p ""
+clear
+echo "SYNTAX/statements.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/statements.src
+read -p ""
+clear
+echo "SYNTAX/type_decl.src "
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+cat ../OUTPUTFILES/Source/SYNTAX/type_decl.src
+read -p ""
+clear

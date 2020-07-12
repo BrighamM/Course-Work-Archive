@@ -1,0 +1,19 @@
+VAR
+a:integer;
+b:integer;
+
+FUNCTION add(VAR a,b:integer;):integer;
+BEGIN
+RETURN a+b
+END;
+
+BEGIN
+a := 1
+b := 2
+WRITE("a: ", a, _ASCIIVAL_=> 10)
+WRITE("b: ", b, _ASCIIVAL_=> 10)
+WRITE("a + b: ", add(a, b), _ASCIIVAL_=> 10)
+WRITE("4 + 5: ", add(4, 5), _ASCIIVAL_=> 10)
+WRITE("a: ", a, _ASCIIVAL_=> 10)
+WRITE("b: ", b, _ASCIIVAL_=> 10)
+END.

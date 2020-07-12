@@ -1,0 +1,9 @@
+PROCEDURE sayHi();
+BEGIN
+WRITE("Hi\n")
+END;
+
+BEGIN
+sayHi()
+sayHi()
+END.

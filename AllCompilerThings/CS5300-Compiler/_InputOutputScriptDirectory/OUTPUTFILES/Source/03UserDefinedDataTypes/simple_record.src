@@ -1,0 +1,21 @@
+VAR
+p:RECORD
+x:integer;
+y:integer;
+z:integer;
+END;
+x:integer;
+y:integer;
+z:integer;
+
+BEGIN
+x := 1
+y := 2
+z := 3
+p.x  := x*y
+p.y  := y*z
+p.z  := z*x
+WRITE("Result  : ")
+WRITE(p.x , _ASCIIVAL_=> 32, p.y , _ASCIIVAL_=> 32, p.z , _ASCIIVAL_=> 10)
+WRITE("Expected: 2 6 3\n")
+END.

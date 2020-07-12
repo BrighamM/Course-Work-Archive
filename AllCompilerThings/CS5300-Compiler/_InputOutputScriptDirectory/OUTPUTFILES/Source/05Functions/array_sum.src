@@ -1,0 +1,32 @@
+CONST
+NUMS_LENGTH = 12;
+
+TYPE
+nums = ARRAY[1:NUMS_LENGTH] OF integer;
+
+VAR
+x:integer;
+arr:nums;
+
+FUNCTION sum(VAR a:nums;):integer;
+VAR
+i:integer;
+total:integer;
+
+BEGIN
+total := 0
+FOR i := 1
+ TO NUMS_LENGTH DO 
+total := total+a [i] 
+ END 
+RETURN total
+END;
+
+BEGIN
+FOR x := 1
+ TO NUMS_LENGTH DO 
+arr [x]  := 5+x
+ END 
+WRITE("The sum of the array is: ", sum(arr), _ASCIIVAL_=> 10)
+WRITE("Expected value         : 138\n")
+END.

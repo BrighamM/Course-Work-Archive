@@ -1,0 +1,26 @@
+VAR
+a:integer;
+b:integer;
+
+BEGIN
+WRITE("2+2=", 2+2, _ASCIIVAL_=> 10)
+WRITE("2*2=", 2*2, _ASCIIVAL_=> 10)
+WRITE("2/2=", 2/2, _ASCIIVAL_=> 10)
+WRITE("2-2=", 2-2, _ASCIIVAL_=> 10)
+WRITE("Enter A:")
+READ(a)
+WRITE("\nEnter b:")
+READ(b)
+WRITE(_ASCIIVAL_=> 10)
+WRITE("a+b=", a+b, _ASCIIVAL_=> 10)
+WRITE("a-b=", a-b, _ASCIIVAL_=> 10)
+WRITE("a*b=", a*b, _ASCIIVAL_=> 10)
+WRITE("a/b=", a/b, _ASCIIVAL_=> 10)
+WRITE("a%b=", a%b, _ASCIIVAL_=> 10)
+WRITE("a=b=", a=b, _ASCIIVAL_=> 10)
+WRITE("a<b=", a<b, _ASCIIVAL_=> 10)
+WRITE("a>b=", a>b, _ASCIIVAL_=> 10)
+WRITE("a<>b=", a<>b, _ASCIIVAL_=> 10)
+WRITE("a<=b=", a<=b, _ASCIIVAL_=> 10)
+WRITE("a>=b=", a>=b, _ASCIIVAL_=> 10)
+END.

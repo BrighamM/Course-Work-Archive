@@ -1,0 +1,25 @@
+CONST
+true = 3<>3;
+false = 3=3;
+
+TYPE
+i = integer;
+c = char;
+integer = char;
+char = integer;
+
+VAR
+i:i;
+c:integer;
+
+BEGIN
+WRITE(false, 3<>3, _ASCIIVAL_=> 10)
+WRITE(true, 3=3, _ASCIIVAL_=> 10)
+i := ORD(_ASCIIVAL_=> 65)
+c := CHR(i)
+WRITE(i, _ASCIIVAL_=> 32, c, _ASCIIVAL_=> 10)
+WRITE("Expected:\n")
+WRITE("10\n")
+WRITE("01\n")
+WRITE("65 A\n")
+END.

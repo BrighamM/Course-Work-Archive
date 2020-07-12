@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 02SimpleExpressions/stop.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/02SimpleExpressions/stop.cpsl > ../../OUTPUTFILES/Assembly/02SimpleExpressions/stop.asm 2> ../../OUTPUTFILES/Error/02SimpleExpressions/stop.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/02SimpleExpressions/stop.cpsl"
+
+echo "BEGIN ERRORS FOR 02SimpleExpressions/stop.cpsl "
+cat ../../OUTPUTFILES/Error/02SimpleExpressions/stop.error
+echo "END ERRORS FOR 02SimpleExpressions/stop.cpsl "

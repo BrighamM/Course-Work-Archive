@@ -1,0 +1,29 @@
+CONST
+BASE = 5;
+SIZE = 10;
+
+TYPE
+i = integer;
+r = RECORD
+a:i;
+b:i;
+c:i;
+END;
+a = ARRAY[BASE:BASE+SIZE] OF r;
+
+VAR
+A:a;
+x:boolean;
+y:boolean;
+i:integer;
+j:integer;
+
+BEGIN
+A [BASE] .a  := A [BASE+SIZE] .b +A [BASE+2] .c 
+A [BASE] .a  := A [BASE+SIZE] .b -A [BASE+2] .c 
+A [BASE] .a  := A [BASE+SIZE] .b *A [BASE+2] .c 
+A [BASE] .a  := A [BASE+SIZE] .b /A [BASE+2] .c 
+A [BASE] .a  := A [BASE+SIZE] .b %A [BASE+2] .c 
+x := ((i<j)&((i>j)|(i<>j))&~(i=j))|(i<=j)&(j>=-i)|ORD(_ASCIIVAL_=> 120)>42
+WRITE(PRED(CHR(SUCC(ORD(_ASCIIVAL_=> 65)))))
+END.

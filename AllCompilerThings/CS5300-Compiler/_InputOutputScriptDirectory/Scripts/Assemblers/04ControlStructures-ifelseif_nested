@@ -1,0 +1,7 @@
+echo "BEGIN COMPILATION: 04ControlStructures/ifelseif_nested.cpsl"
+../../../build/cpsl -a < ../../INPUT-CPSL-FILES/04ControlStructures/ifelseif_nested.cpsl > ../../OUTPUTFILES/Assembly/04ControlStructures/ifelseif_nested.asm 2> ../../OUTPUTFILES/Error/04ControlStructures/ifelseif_nested.error
+echo "END COMPILATION: ../../INPUT-CPSL-FILES/04ControlStructures/ifelseif_nested.cpsl"
+
+echo "BEGIN ERRORS FOR 04ControlStructures/ifelseif_nested.cpsl "
+cat ../../OUTPUTFILES/Error/04ControlStructures/ifelseif_nested.error
+echo "END ERRORS FOR 04ControlStructures/ifelseif_nested.cpsl "
