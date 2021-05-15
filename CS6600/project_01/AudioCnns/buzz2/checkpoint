@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\dev\\CS6600\\project_01\\AudioCnns\\buzz2\\cnn_audio_model_buzz1_threadOne"
+all_model_checkpoint_paths: "C:\\dev\\CS6600\\project_01\\AudioCnns\\buzz2\\cnn_audio_model_buzz1_threadOne"

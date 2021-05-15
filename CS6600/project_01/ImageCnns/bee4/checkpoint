@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\dev\\CS6600\\project_01\\ImageCnns\\bee4\\cnn_image_model_bee4_threadTen"
+all_model_checkpoint_paths: "C:\\dev\\CS6600\\project_01\\ImageCnns\\bee4\\cnn_image_model_bee4_threadTen"

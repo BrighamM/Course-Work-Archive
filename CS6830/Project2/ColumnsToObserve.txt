@@ -1,0 +1,5 @@
+Zip Zip_Code_Crime
+Highest_NIBRS_UCR_Offense_Description
+Record DATE
+Populationbelowpovertylevel
+Medianhouseholdincome

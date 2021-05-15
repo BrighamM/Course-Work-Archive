@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\dev\\CS6600\\Homework\\hw05\\PersistedNets\\Shallow_ANN.tfl"
+all_model_checkpoint_paths: "C:\\dev\\CS6600\\Homework\\hw05\\PersistedNets\\Shallow_ANN.tfl"

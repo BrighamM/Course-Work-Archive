@@ -1,0 +1,136 @@
+(setf *restaurant-story*
+  '((jack went to a restaurant)
+  (jack ate a lobster)
+  (jack went home)))
+
+(setf *restaurant-story*
+  '((jack went to a restaurant)))
+
+  (ca '(apple))
+
+  (ca '(an apple))
+
+
+  (ca '(jack ate an apple))
+
+  (setf *shopping-story*
+    '((ann went to a store)
+    (ann bought a kite)
+    (ann went home)))
+
+(setf *shopping-story*
+    '((ann went to a store)
+    (ann bought a kite)
+    (ann went home)))
+
+ (sam (sents-to-cds *shopping-story*))
+
+
+
+(load "ca-loader.lisp")
+(ca-loader *files*)
+(load "ca-defs.lisp")
+(load "sam.lisp")
+
+
+
+
+    (
+      (PTRANS (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:OBJECT (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:TO (STORE (:NUMBER (SINGULAR)) (:REF (INDEF)))) (:TIME (PAST)))
+     
+      (ATRANS (:TIME (PAST))(:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)) (:NUMBER (SINGULAR)) (:REF (INDEF))))(:OBJECT (KITE (:NUMBER (SINGULAR)) (:REF (INDEF)))))
+      
+      (PTRANS (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:OBJECT NIL)(:TO (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:TIME (PAST)))
+      
+      (ATRANS (:ACTOR (STORE (:NUMBER (SINGULAR)) (:REF (INDEF)))) (:OBJECT NIL) (:FROM (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))(:TO (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:TIME (PAST)))
+
+      (ATRANS (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) (:OBJECT (MONEY))(:FROM (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))(:TO (STORE (:NUMBER (SINGULAR)) (:REF (INDEF)))) (:TIME (PAST)))
+
+      (PTRANS (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))(:OBJECT (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))(:FROM (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))(:TO (HOME (:NUMBER (SINGULAR)) (:REF (INDEF)))) (:TIME (PAST)))
+
+      ($SHOPPING (SHOPPER (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))(STORE (STORE (:NUMBER (SINGULAR)) (:REF (INDEF)))) (TIME (PAST))(ELSEWHERE (HOME (:NUMBER (SINGULAR)) (:REF (INDEF)))))
+    )
+
+
+
+(
+  (PTRANS 
+    (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:OBJECT (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:TO (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:TIME (PAST))
+  )
+
+
+
+
+
+
+
+  (ATRANS 
+    (:TIME (PAST))
+    (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)) (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:OBJECT (KITE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+  )
+
+
+
+
+
+
+
+
+  (PTRANS 
+    (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) 
+    (:OBJECT NIL)
+    (:TO (HUMAN (:SEX (FEMALE)) (:NAME (ANN)))) 
+    (:TIME (PAST))
+  )
+
+
+
+
+
+
+
+
+
+
+
+  (ATRANS 
+    (:ACTOR (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:OBJECT NIL)
+    (:FROM (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:TO (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:TIME (PAST))
+  )
+
+  (ATRANS 
+    (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:OBJECT (MONEY))
+    (:FROM (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:TO (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:TIME (PAST))
+  )
+
+  (PTRANS 
+    (:ACTOR (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:OBJECT (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (:FROM (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:TO (HOME (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (:TIME (PAST))
+  )
+
+  ($SHOPPING 
+    (SHOPPER (HUMAN (:SEX (FEMALE)) (:NAME (ANN))))
+    (STORE (STORE (:NUMBER (SINGULAR)) (:REF (INDEF))))
+    (TIME (PAST))
+    (ELSEWHERE (HOME (:NUMBER (SINGULAR)) (:REF (INDEF))))
+  )
+)
+
+
+
+
+
+
